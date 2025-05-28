@@ -1,0 +1,25 @@
+#!/usr/bin/env php
+<?php
+
+require __DIR__.'/../vendor/autoload.php';
+
+use Symfony\Component\Console\Application;
+use App\Command\MigrateCommand;
+use App\Command\ImportXmlCommand;
+use App\Command\CheckDataCommand;
+use Dotenv\Dotenv;
+
+// Load environment variables
+$dotenv = Dotenv::createImmutable(__DIR__ . '/..');
+$dotenv->load();
+
+// Create console application
+$application = new Application('Catalog App', '1.0.0');
+
+// Register available commands
+$application->add(new MigrateCommand());
+$application->add(new ImportXmlCommand());
+$application->add(new CheckDataCommand());
+
+// Run application
+$application->run();
