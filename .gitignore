@@ -1,0 +1,17 @@
+# IDE files
+.idea/
+.vscode/
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# PHP dependencies
+/vendor/
+composer.lock
+.phpunit.result.cache
+
+# OS files
+.DS_Store
+Thumbs.db
