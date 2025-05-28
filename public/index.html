@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог товарів</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="container">
+    <aside class="sidebar">
+        <h2>Фільтри товарів</h2>
+        <div id="filters"></div>
+    </aside>
+
+    <main class="main">
+        <div class="toolbar">
+            <select id="sort">
+                <option value="">Сортувати за</option>
+                <option value="price_asc">Спочатку дешевші</option>
+                <option value="price_desc">Спочатку дорожчі</option>
+            </select>
+        </div>
+
+        <div id="products" class="products-grid"></div>
+
+        <div class="pagination" id="pagination">
+            <button id="prevPage">Попередня сторінка</button>
+            <span id="currentPage">Сторінка 1</span>
+            <button id="nextPage">Наступна сторінка</button>
+        </div>
+    </main>
+</div>
+
+<script src="js/app.js"></script>
+</body>
+</html>
