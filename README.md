@@ -239,6 +239,8 @@ GET http://localhost:8000/api/catalog/products?page=2&limit=20&sort_by=price_des
 
 ## Тестування
 
+Для запуску тестів необхідно налаштувати доступи до бази даних та Redis у файлі `phpunit.xml.dist`
+
 ```bash
 composer test
 ```
