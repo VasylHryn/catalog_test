@@ -205,22 +205,20 @@ GET http://localhost:8000/api/catalog/products?page=2&limit=20&sort_by=price_des
 {
     "data": [
         {
-            "id": 1,
-            "name": "Продукт 1",
-            "price": 1000.00,
-            "description": "Опис продукту",
-            "parameters": {
-                "kol-r": "Чорний",
-                "brend": "Nike",
-                "stat": "Чоловіча"
-            }
+            "id": 515,
+            "name": "Напульсник UA Performance Wristbands-BLK чорний Чол UNI",
+            "price": "490.00",
+            "status": 1,
+            "description": "Мужские напульсники Under Armour\n57% хлопок / 38% поліестер / 5% эластан",
+            "created_at": "2025-05-28 21:28:29",
+            "updated_at": "2025-05-28 21:28:29"
         }
     ],
     "meta": {
         "current_page": 1,
         "per_page": 10,
-        "total": 100,
-        "last_page": 10
+        "total": 10228,
+        "last_page": 1023
     }
 }
 ```
